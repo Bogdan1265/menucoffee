@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style.css"> <!-- Связываем CSS -->
+</head>
+<body>
+
+<button id="call-waiter" onclick="callWaiter()">Викликати офіціанта</button>
+
+<section>
+    <div class="menu-group" id="snacks" onclick="toggleSubMenu('snacks-submenu')">
+        <h2>Закуски</h2>
+        <p>Нажміть, щоб оглянути всі закуски</p>
+    </div>
+    <div class="submenu" id="snacks-submenu">
+        <div class="menu-item"><img src="salates.jpg" alt="Салат"><p>Салат Цезарь</p></div>
+        <div class="menu-item"><img src="sandwich.jpg" alt="Сэндвич"><p>Сэндвич с ветчиной</p></div>
+        <div class="menu-item"><img src="carrot_Fri.jpg" alt="Картофель фри"><p>Картофель фри</p></div>
+    </div>
+
+    <div class="menu-group" id="drinks" onclick="toggleSubMenu('drinks-submenu')">
+        <h2>Напої</h2>
+        <p>Нажміть, щоб оглянути всі напої</p>
+    </div>
+    <div class="submenu" id="drinks-submenu">
+        <div class="menu-item"><img src="black_tea.jpg" alt="Чай"><p>Чёрный чай</p></div>
+        <div class="menu-item"><img src="coffee.jpg" alt="Кофе"><p>Капучино</p></div>
+        <div class="menu-item"><img src="juice.jpg" alt="Сок"><p>Апельсиновый сок</p></div>
+    </div>
+
+    <div class="menu-group" id="main" onclick="toggleSubMenu('main-submenu')">
+        <h2>Основні страви</h2>
+        <p>Натисніть, щоб оглянути всі основні страви</p>
+    </div>
+    <div class="submenu" id="main-submenu">
+        <div class="menu-item"><img src="pizza.jpg" alt="Пицца"><p>Пицца Маргарита</p></div>
+        <div class="menu-item"><img src="pasta.jpg" alt="Паста"><p>Паста Карбонара</p></div>
+        <div class="menu-item"><img src="burger.jpg" alt="Бургер"><p>Чизбургер</p></div>
+    </div>
+
+    <div class="menu-group" id="desserts" onclick="toggleSubMenu('desserts-submenu')">
+        <h2>Десерти</h2>
+        <p>Натисніть, щоб оглянути всі десерти</p>
+    </div>
+    <div class="submenu" id="desserts-submenu">
+        <div class="menu-item"><img src="cake.jpg" alt="Торт"><p>Шоколадный торт</p></div>
+        <div class="menu-item"><img src="icecream.jpg" alt="Мороженое"><p>Ванильное мороженое</p></div>
+        <div class="menu-item"><img src="cheesecake.jpg" alt="Чизкейк"><p>Клубничный чизкейк</p></div>
+    </div>
+</section>
+
+<!-- Кнопка для отображения отзывов -->
+<button id="show-reviews-button" onclick="toggleReviews()">Відгуки</button>
+
+<!-- Блок с отзывами -->
+<div id="reviews-section" style="display: none;">
+    <form id="review-form">
+        <label for="review-text">Ваш відгук:</label>
+        <textarea id="review-text" placeholder="Напишіть відгук..."></textarea><br>
+        <button type="submit">Відправити відгук</button>
+    </form>
+
+    <h2>Відгук:</h2>
+    <div id="reviews"></div>
+</div>
+
+
+
+<div clas="created"> created by BogdanCinases </div>
+
+</body>
+<script src='C:\Html CSS\Script.js'></script>
+</html>
